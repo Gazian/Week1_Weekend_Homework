@@ -46,7 +46,5 @@ def find_pet_by_name (cc_pet_shop,name):
     for animal in cc_pet_shop["pets"]:
         if (animal["name"]==name):
             pet = {"name":animal["name"]}
-        # elif (animal["name"]!=name):
-        #     pet = None
-    return pet
+            return pet
 
