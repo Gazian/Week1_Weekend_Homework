@@ -41,3 +41,12 @@ def get_pets_by_breed (cc_pet_shop,breed):
         if (animal["breed"]==breed):
             breedlist.append (animal["breed"])
     return breedlist
+
+def find_pet_by_name (cc_pet_shop,name):
+    for animal in cc_pet_shop["pets"]:
+        if (animal["name"]==name):
+            pet = {"name":animal["name"]}
+        # elif (animal["name"]!=name):
+        #     pet = None
+    return pet
+
