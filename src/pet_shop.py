@@ -32,3 +32,12 @@ def get_stock_count (cc_pet_shop):
     for pet in cc_pet_shop["pets"]:
         stock +=1
     return stock
+
+#Function 7 - Input - def test_all_pets_by_breed__found
+        # & def test_all_pets_by_breed__not_found
+def get_pets_by_breed (cc_pet_shop,breed):
+    breedlist = []
+    for animal in cc_pet_shop["pets"]:
+        if (animal["breed"]==breed):
+            breedlist.append (animal["breed"])
+    return breedlist
