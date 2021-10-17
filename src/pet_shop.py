@@ -42,9 +42,17 @@ def get_pets_by_breed (cc_pet_shop,breed):
             breedlist.append (animal["breed"])
     return breedlist
 
+#Function 8 - Input - def test_find_pet_by_name__returns_pet
+    # & def test_find_pet_by_name__returns_None
 def find_pet_by_name (cc_pet_shop,name):
     for animal in cc_pet_shop["pets"]:
         if (animal["name"]==name):
             pet = {"name":animal["name"]}
             return pet
+
+def remove_pet_by_name (cc_pet_shop,name):
+    for animal in cc_pet_shop["pets"]:
+        if (animal["name"]==name):   
+            del animal["name"]
+
 
